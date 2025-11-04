@@ -44,6 +44,18 @@ A `.gitignore` file is included to prevent unnecessary or environment-specific f
 ### Greeting Page including PNG logo on http://localhost:8080/greeting 
 ![App running on localhost](screenshots/Screenshot2.png)
 
+### Greeting Pages on Postman
+![Greeting page screenshot](screenshots/Screenshot3.png)
+![Greeting pagelogo screenshot](screenshots/Screenshot4.png)
+
+In Postman, we can test that the /greeting endpoint returns a valid HTML response. The image itself doesn’t show up here because Postman doesn’t render web pages; but it does confirm that the controller and template are working.
+
+### Greeting Pages on Swagger
+![Greeting page screenshot](screenshots/Screenshot5.png)
+![Greeting pagelogo screenshot](screenshots/Screenshot6.png)
+
+The /greeting endpoint returns an HTML page with an embedded image. In Swagger and Postman we only see the raw HTML code because they don’t render web pages, but in the browser the image loads correctly from the /images directory.
+
 ## Author
 **Name:** Feryel Tesnim Kermiche
 **Student Number:** 74450
