@@ -41,7 +41,7 @@ A `.gitignore` file is included to prevent unnecessary or environment-specific f
 ### Greeting Page on http://localhost:8080
 ![Greeting page screenshot](screenshots/Screenshot1.png)
 
-### Greeting Page on [http://localhost:8080/greeting including PNG logo
+### Greeting Page including PNG logo on http://localhost:8080/greeting 
 ![App running on localhost](screenshots/Screenshot2.png)
 
 ## Author
