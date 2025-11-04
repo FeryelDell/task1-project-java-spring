@@ -4,6 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import io.swagger.v3.oas.annotations.Operation;
+
 
 @Controller
 public class HelloController {
@@ -15,6 +17,7 @@ public class HelloController {
     }
 
 
+    @Operation(summary = "Display greeting page", description = "Returns an HTML page with a welcome message and image.")
     @GetMapping("/greeting")
     public String greeting(Model model) {
         model.addAttribute("message", "Welcome to Vistula University!");
