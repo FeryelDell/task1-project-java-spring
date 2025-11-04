@@ -10,7 +10,7 @@ This is a simple web app made with Spring Boot that displays a greeting page wit
 ## Screenshots
 
 ### Greeting Page on http://localhost:8080
-![Greeting page screenshot](screenshots/screenshot1.png)
+![Greeting page screenshot](screenshots/Screenshot1.png)
 
 ### Greeting Page on [http://localhost:8080/greeting including PNG logo
-![App running on localhost](screenshots/screenshot2.png)
+![App running on localhost](screenshots/Screenshot2.png)
