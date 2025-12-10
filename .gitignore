@@ -31,3 +31,23 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# === SECRET FILES (PROTECT API KEYS) ===
+.env
+*.env
+*.key
+*.pem
+*.p12
+*.token
+*.secret
+secret/
+keys/
+config/*.properties
+application.properties
+application.yml
+application.yaml
+
+# Prevent accidental backup files
+*.bak
+*.old
+
