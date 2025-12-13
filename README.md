@@ -18,8 +18,8 @@ The application contains two HTTP endpoints: one that returns a plain text messa
 1. Open the project in **IntelliJ IDEA**.  
 2. Run the `FirstProjectJavaSpringApplication` class.  
 3. Once the application starts, open the following URLs in your browser:
-   - `http://localhost:8080/` — displays a plain text message.  
-   - `http://localhost:8080/greeting` — displays the HTML greeting page with a dynamic message and an image.
+   - `http://localhost:8080/` - displays a plain text message.  
+   - `http://localhost:8080/greeting` - displays the HTML greeting page with a dynamic message and an image.
 
 ## Endpoints
 | HTTP Method | URL Path | Description |
@@ -61,4 +61,4 @@ The /greeting endpoint returns an HTML page with an embedded image. In Swagger a
 **Student Number:** 74450
 **University:** Vistula University  
 **Course:** Java Spring Framework  
-**Task:** 1 – Spring Boot Web Application
+**Task:** 1 - Spring Boot Web Application
