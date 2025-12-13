@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Greeting Page</title>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<h1 th:text="${message}">Default message</h1>
-<img th:src="@{/images/vistula.png}" alt="Vistula Logo" width="611">
+<p th:text="'Hello, ' + ${name} + '!'">Default message</p>
+
+<p>
+    This is a Spring Boot application designed to demonstrate a dynamic greeting page for Vistula University.
+</p>
+
+<img th:src="@{/images/vistula.png}" width="600" height="600"/>
 </body>
 </html>
