@@ -3,26 +3,23 @@ package pl.edu.vistula.task1_project_java_spring.controllers;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import io.swagger.v3.oas.annotations.Operation;
-
+import org.springframework.web.bind.annotation.RestController;
 
 @Controller
 public class HelloController {
 
-    @GetMapping("/")
+    @GetMapping(value = "/")
     @ResponseBody
-    public String sayHello() {
-        return "Hello Vistula, in my first Spring controller !";
+    public String hello() {
+        return "Hello Vistula, in my first Spring controller.";
     }
 
-
-    @Operation(summary = "Display greeting page", description = "Returns an HTML page with a welcome message and image.")
     @GetMapping("/greeting")
-    public String greeting(Model model) {
-        model.addAttribute("message", "Welcome to Vistula University!");
+    public String greeting(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
+        model.addAttribute("name", name);
         return "greeting";
     }
-
-
+    // http://localhost:8080/greeting?name=Vistula
 }
